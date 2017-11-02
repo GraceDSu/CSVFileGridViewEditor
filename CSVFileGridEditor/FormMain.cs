@@ -64,6 +64,7 @@ namespace CSVFileGridEditor
             Fdlg.Filter = FileFilter;
             if (Fdlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+                TextBoxFile.Text = Fdlg.FileName;
                 string csvPath = Fdlg.FileName;
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
